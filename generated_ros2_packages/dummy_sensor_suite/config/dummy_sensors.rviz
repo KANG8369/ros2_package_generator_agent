@@ -1,0 +1,53 @@
+# RViz configuration to quickly visualize dummy_sensor_suite topics
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Selection
+    Name: Selection
+  - Class: rviz_common/Tool Properties
+    Name: Tool Properties
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Name: TF
+    - Class: rviz_default_plugins/LaserScan
+      Enabled: true
+      Name: Dummy LaserScan
+      Topic: /dummy/scan
+    - Class: rviz_default_plugins/Range
+      Enabled: true
+      Name: Dummy Range
+      Topic: /dummy/range
+    - Class: rviz_default_plugins/Imu
+      Enabled: true
+      Name: Dummy IMU
+      Topic: /dummy/imu
+    - Class: rviz_default_plugins/Image
+      Enabled: true
+      Name: Dummy Image
+      Topic: /dummy/image
+  Enabled: true
+  Global Options:
+    Fixed Frame: imu_link
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/Measure
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/PublishPoint
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 10
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Pitch: 0.5
+      Yaw: 0.5

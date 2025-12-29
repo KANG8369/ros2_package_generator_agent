@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>dummy_sensor_suite</name>
+  <version>0.0.1</version>
+  <description>Configurable dummy sensor data generator for IMU, range/laser, temperature, and image-like streams for testing and development.</description>
+
+  <maintainer email="maintainer@example.com">Dummy Maintainer</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+
+  <export>
+  </export>
+</package>

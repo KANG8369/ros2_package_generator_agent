@@ -1,0 +1,48 @@
+dummy_sensors:
+  ros__parameters:
+    # IMU configuration
+    imu.enable: true
+    imu.frame_id: "imu_link"
+    imu.rate_hz: 50.0
+    imu.accel_mean: 0.0
+    imu.accel_stddev: 0.05
+    imu.gyro_mean: 0.0
+    imu.gyro_stddev: 0.02
+
+    # Laser scan configuration
+    laser.enable: true
+    laser.frame_id: "laser_frame"
+    laser.rate_hz: 10.0
+    laser.angle_min: -1.57
+    laser.angle_max: 1.57
+    laser.angle_increment: 0.01
+    laser.range_min: 0.1
+    laser.range_max: 10.0
+    laser.range_mean: 4.0
+    laser.range_stddev: 0.1
+
+    # Range sensor configuration
+    range.enable: true
+    range.frame_id: "range_sensor"
+    range.rate_hz: 20.0
+    range.min: 0.2
+    range.max: 3.5
+    range.mean: 1.5
+    range.stddev: 0.05
+
+    # Temperature configuration (Kelvin)
+    temperature.enable: true
+    temperature.frame_id: "temp_sensor"
+    temperature.rate_hz: 1.0
+    temperature.mean: 293.15
+    temperature.stddev: 0.5
+
+    # Image configuration
+    image.enable: true
+    image.frame_id: "camera_link"
+    image.rate_hz: 5.0
+    image.width: 320
+    image.height: 240
+    image.encoding: "mono8"   # mono8, rgb8, bgr8, rgba8, bgra8
+    image.base_intensity: 120
+    image.noise_stddev: 15.0

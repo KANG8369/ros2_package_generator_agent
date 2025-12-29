@@ -1,0 +1,45 @@
+dummy_sensors:
+  ros__parameters:
+    # Simulate a slow, low-noise environment (e.g., static robot in lab)
+
+    imu.enable: true
+    imu.frame_id: "imu_link"
+    imu.rate_hz: 20.0
+    imu.accel_mean: 0.0
+    imu.accel_stddev: 0.01
+    imu.gyro_mean: 0.0
+    imu.gyro_stddev: 0.005
+
+    laser.enable: true
+    laser.frame_id: "laser_frame"
+    laser.rate_hz: 2.0
+    laser.angle_min: -1.0
+    laser.angle_max: 1.0
+    laser.angle_increment: 0.02
+    laser.range_min: 0.2
+    laser.range_max: 8.0
+    laser.range_mean: 3.0
+    laser.range_stddev: 0.02
+
+    range.enable: true
+    range.frame_id: "range_sensor"
+    range.rate_hz: 5.0
+    range.min: 0.2
+    range.max: 2.0
+    range.mean: 1.0
+    range.stddev: 0.01
+
+    temperature.enable: true
+    temperature.frame_id: "temp_sensor"
+    temperature.rate_hz: 0.5
+    temperature.mean: 295.15
+    temperature.stddev: 0.1
+
+    image.enable: true
+    image.frame_id: "camera_link"
+    image.rate_hz: 1.0
+    image.width: 640
+    image.height: 480
+    image.encoding: "mono8"
+    image.base_intensity: 100
+    image.noise_stddev: 5.0
